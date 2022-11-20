@@ -9,6 +9,14 @@
 
 int _printf(const char *format, ...)
 {
+	int len;
+	va_list arg;
+	va_start(arg, format);
+
 	if (format == NULL)
 		return (-1);
+
+	len = controller(format, arg);
+
+	return (len);
 }
