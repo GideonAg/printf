@@ -13,6 +13,8 @@ int directive_controller(va_list ap, int ch)
 	format handlers[] = {
 		{'s', print_string},
 		{'c', print_char},
+		{'d', print_int},
+		{'i', print_int},
 	};
 
 	if (ch == '\0')
