@@ -2,7 +2,20 @@
 #define MAIN_H
 
 #include <unistd.h>
+#include <stdarg.h>
 
 int _putchar(char c);
+
+/**
+ * struct format - A format typedef
+ * @format: character for format directive
+ * @fun_ptr: pointer of function to hold handler function
+ */
+
+typedef struct format
+{
+	char format;
+	int (*fun_ptr)(va_list);
+}
 
 #endif
