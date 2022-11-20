@@ -10,7 +10,7 @@ int _printf(const char *format, ...);
 int print_string(va_list ap);
 int print(char *s);
 int controller(const char *, va_list);
-int directive_controller(const char *, va_list, int);
+int directive_controller(va_list, int);
 
 /**
  * struct format - A format typedef

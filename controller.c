@@ -15,7 +15,7 @@ int controller(const char *s, va_list ap)
 	{
 		if (s[i] == '%')
 		{
-			p = directive_controller(s, ap, s[++i]);
+			p = directive_controller(ap, s[++i]);
 
 			if (p == -1)
 				return (-1);
@@ -29,4 +29,6 @@ int controller(const char *s, va_list ap)
 		nchars++;
 		i++;
 	}
+
+	return (nchars);
 }
