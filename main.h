@@ -11,6 +11,7 @@ int print_string(va_list ap);
 int print(char *s);
 int controller(const char *, va_list);
 int directive_controller(va_list, int);
+char *_itoa(long int num, int base);
 
 /**
  * struct format - A format typedef
