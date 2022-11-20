@@ -3,7 +3,7 @@
 /**
  * controller - Controls how format directives are handled.
  *
- * @format: char* with zero or more format directives.
+ * @s: char* with zero or more format directives.
  * @ap: va_list of format parameters.
  * Return: Number of characters written to stdout.
  */

@@ -3,7 +3,6 @@
 /**
  * directive_controller - Delegates format directives to handler functions.
  *
- * @format: char* with zero or more format directives.
  * @ap: va_list of format parameters.
  * @ch: char immediately after %.
  * Return: Number of bytes written to stdout.
