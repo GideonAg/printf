@@ -2,11 +2,7 @@
 #define MAIN_H
 
 #include <unistd.h>
-<<<<<<< HEAD
-#include <stdarg.h>
-=======
 #include "stdarg.h"
->>>>>>> 2147413e147b65c35fdc4868f61b0fd191b3d1e3
 
 int _putchar(char c);
 int print_char(va_list ap);
@@ -23,5 +19,8 @@ typedef struct format
 	char format;
 	int (*fun_ptr)(va_list);
 }
+
+int print_string(va_list ap);
+int print(char *s);
 
 #endif
