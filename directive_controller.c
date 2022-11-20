@@ -3,12 +3,11 @@
 /**
  * directive_controller - Delegates format directives to handler functions.
  *
- * @format: char* with zero or more format directives.
  * @ap: va_list of format parameters.
  * @ch: char immediately after %.
  * Return: Number of bytes written to stdout.
  */
-int directive_controller(const char *s, va_list ap, int ch)
+int directive_controller(va_list ap, int ch)
 {
 	int p, nhandlers;
 	format handlers[] = {

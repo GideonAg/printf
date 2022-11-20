@@ -3,7 +3,7 @@
 /**
  * controller - Controls how format directives are handled.
  *
- * @format: char* with zero or more format directives.
+ * @s: char* with zero or more format directives.
  * @ap: va_list of format parameters.
  * Return: Number of characters written to stdout.
  */
@@ -15,7 +15,7 @@ int controller(const char *s, va_list ap)
 	{
 		if (s[i] == '%')
 		{
-			p = directive_controller(s, ap, s[++i]);
+			p = directive_controller(ap, s[++i]);
 
 			if (p == -1)
 				return (-1);
@@ -29,4 +29,6 @@ int controller(const char *s, va_list ap)
 		nchars++;
 		i++;
 	}
+
+	return (nchars);
 }
