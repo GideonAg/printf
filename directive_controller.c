@@ -14,6 +14,8 @@ int directive_controller(va_list ap, int ch)
 		{'s', print_string},
 		{'c', print_char},
 		{'b', _print_binary},
+		{'d', print_int},
+		{'i', print_int},
 	};
 
 	if (ch == '\0')
