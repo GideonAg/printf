@@ -14,6 +14,8 @@ int directive_controller(va_list ap, int ch)
 		{'s', print_string},
 		{'c', print_char},
 		{'b', _print_binary},
+		{'x', _print_hexadecimal_lower},
+		{'X', _print_hexadecimal_upper},
 		{'d', print_int},
 		{'i', print_int},
 	};

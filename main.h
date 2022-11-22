@@ -2,6 +2,7 @@
 #define MAIN_H
 
 #include <unistd.h>
+#include <string.h>
 #include "stdarg.h"
 
 int _putchar(char c);
@@ -14,6 +15,8 @@ int directive_controller(va_list, int);
 char *_itoa(long int num, int base);
 int _print_binary(va_list ap);
 int print_int(va_list);
+int _print_hexadecimal_upper(va_list ap);
+int _print_hexadecimal_lower(va_list ap);
 
 /**
  * struct format - A format typedef
